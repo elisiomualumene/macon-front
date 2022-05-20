@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const Chart = require("chart.js");
 //
 // Chart extension for making the bars rounded
@@ -332,7 +333,7 @@ let chartExample1 = {
       datasets: [
         {
           label: "Performance",
-          data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+          data: [30, 10, 40, 15, 25, 7, 12, 0, 0]
         },
       ],
     };
@@ -343,7 +344,7 @@ let chartExample1 = {
       datasets: [
         {
           label: "Performance",
-          data: [0, 20, 5, 25, 10, 30, 15, 40, 40],
+          data: [0, 0, 0, 0, 0, 0, 0, 0, 0],
         },
       ],
     };
@@ -387,7 +388,7 @@ let chartExample2 = {
     datasets: [
       {
         label: "Sales",
-        data: [25, 20, 30, 22, 17, 29],
+        data: [10, 23, 38, 41, 5, 6],
         maxBarThickness: 10,
       },
     ],

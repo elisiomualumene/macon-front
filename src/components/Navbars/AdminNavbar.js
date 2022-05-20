@@ -75,7 +75,7 @@ const AdminNavbar = (props) => {
                   <i className="ni ni-single-02" />
                   <span>Meu Perfil</span>
                 </DropdownItem>
-                <DropdownItem to="/admin/user-profile" tag={Link}>
+                <DropdownItem to="/setting" tag={Link}>
                   <i className="ni ni-settings-gear-65" />
                   <span>Definições</span>
                 </DropdownItem>
@@ -90,7 +90,6 @@ const AdminNavbar = (props) => {
                 <DropdownItem divider />
                 <DropdownItem onClick={(e) => {
                   e.preventDefault();
-
                   logoutUser();
                 }}>
                   <i className="ni ni-user-run" />

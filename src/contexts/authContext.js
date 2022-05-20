@@ -62,7 +62,7 @@ export function AuthProvider({ children }) {
       const token = data.data.token
 
       toast.update(toastAuthId.current, {
-        render: "message",
+        render: "Seja Bem Vindo",
         type: success ? toast.TYPE.SUCCESS : toast.TYPE.ERROR,
         autoClose: closeTime,
         isLoading: false,

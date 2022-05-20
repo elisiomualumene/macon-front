@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
 
@@ -34,7 +35,7 @@ const Viagens = () => {
   }
 
   async function getTravelList() {
-    const request = await axios.get("travels/list/");
+    const request = await axios.get("/travels/list/");
     const { data } = await request.data;
 
     console.log("************** Travel List: ", data);

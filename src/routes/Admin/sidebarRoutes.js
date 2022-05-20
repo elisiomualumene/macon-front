@@ -7,6 +7,7 @@ import Viagens from "views/examples/Viagens";
 import Pais from "views/examples/Pais";
 import Transporte from "views/examples/Transporte";
 import Agendamentos from "views/examples/Agendamentos";
+import GerirPerfil from 'views/GerirPerfil'
 
 
 var routes = [
@@ -96,33 +97,27 @@ var routes = [
     component: Agendamentos,
     layout: "/admin",
 
-    subnav: [
-      {
-        path: "/",
-        name: "Listar ",
-        icon: "fa fa-list text-info",
-        component: Login,
-        layout: "/",
-      },
-      {
-        path: "/",
-        name: "Consultar",
-        icon: "fa fa-search text-info",
-        component: Login,
-        layout: "/",
-      },
+    // subnav: [
+    //   {
+    //     path: "/",
+    //     name: "Listar ",
+    //     icon: "fa fa-list text-info",
+    //     component: Login,
+    //     layout: "/",
+    //   },
+    //   {
+    //     path: "/",
+    //     name: "Consultar",
+    //     icon: "fa fa-search text-info",
+    //     component: Login,
+    //     layout: "/",
+    //   },
 
 
-    ]
+    // ]
   },
 
-  {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: Login,
-    layout: "/auth",
-  },
+
   {
     path: "/register",
     name: "Criar Utilizadores",
@@ -130,5 +125,21 @@ var routes = [
     component: Register,
     layout: "/auth",
   },
+  {
+    path: "/user-profile",
+    name: "Perfil",
+    icon: "ni ni-circle-08 text-info",
+    component: GerirPerfil,
+    layout: "/admin",
+   },
+   
+   {
+    path: "/login",
+    name: "Sair",
+    icon: "ni ni-key-25 text-info",
+    component: Login,
+    layout: "/auth",
+   },
+
 ];
 export default routes;

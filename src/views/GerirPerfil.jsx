@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 // reactstrap components
 import {
   Button,
@@ -27,14 +29,12 @@ const GerirPerfil = () => {
                 <Col className="order-lg-2" lg="3">
                   <div className="card-profile-image">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      
+                      {/* <img
                         alt="..."
                         className="rounded-circle"
-                        src={
-                          require("../../assets/img/theme/team-4-800x800.jpg")
-                            .default
-                        }
-                      />
+                        src={lof}
+                      /> */}
                     </a>
                   </div>
                 </Col>
@@ -82,12 +82,12 @@ const GerirPerfil = () => {
                 </Row>
                 <div className="text-center">
                   <h3>
-                    Jessica Jones
+                    Usher Mendoça
                     <span className="font-weight-light">, 27</span>
                   </h3>
                   <div className="h5 font-weight-300">
                     <i className="ni location_pin mr-2" />
-                    Bucharest, Romania
+                    Luanda / Angola
                   </div>
                   <div className="h5 mt-4">
                     <i className="ni business_briefcase-24 mr-2" />
@@ -95,16 +95,14 @@ const GerirPerfil = () => {
                   </div>
                   <div>
                     <i className="ni education_hat mr-2" />
-                    University of Computer Science
+                    Instituto Politecnico Industrial de Luanda
                   </div>
                   <hr className="my-4" />
                   <p>
-                    Ryan — the name taken by Melbourne-raised, Brooklyn-based
-                    Nick Murphy — writes, performs and records all of his own
-                    music.
+                  Usher Mendoça aluno do Instituto Politecnico Industrial de Luanda, area de Formaçao Informatica, curso: Gestão de Sistemas Informáticos
                   </p>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Show more
+                    Mostrar Mais
                   </a>
                 </div>
               </CardBody>
@@ -115,7 +113,7 @@ const GerirPerfil = () => {
               <CardHeader className="bg-white border-0">
                 <Row className="align-items-center">
                   <Col xs="8">
-                    <h3 className="mb-0">My account</h3>
+                    <h3 className="mb-0">Minha Conta</h3>
                   </Col>
                   <Col className="text-right" xs="4">
                     <Button
@@ -124,7 +122,7 @@ const GerirPerfil = () => {
                       onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
-                      Settings
+                      Configurações
                     </Button>
                   </Col>
                 </Row>
@@ -132,7 +130,7 @@ const GerirPerfil = () => {
               <CardBody>
                 <Form>
                   <h6 className="heading-small text-muted mb-4">
-                    User information
+                    Informaçoes do Usuario
                   </h6>
                   <div className="pl-lg-4">
                     <Row>
@@ -142,11 +140,11 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-username"
                           >
-                            Username
+                            Sobrenome
                           </label>
                           <Input
                             className="form-control-alternative"
-                            defaultValue="lucky.jesse"
+                            defaultValue="usher.mendoça"
                             id="input-username"
                             placeholder="Username"
                             type="text"
@@ -159,12 +157,12 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-email"
                           >
-                            Email address
+                            Endereco de Email
                           </label>
                           <Input
                             className="form-control-alternative"
                             id="input-email"
-                            placeholder="jesse@example.com"
+                            placeholder="usher.mendoça@gmail.com"
                             type="email"
                           />
                         </FormGroup>
@@ -177,11 +175,11 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-first-name"
                           >
-                            First name
+                            Nome
                           </label>
                           <Input
                             className="form-control-alternative"
-                            defaultValue="Lucky"
+                            defaultValue="Usher Mendoça"
                             id="input-first-name"
                             placeholder="First name"
                             type="text"
@@ -194,11 +192,11 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-last-name"
                           >
-                            Last name
+                            Ultimo Nome
                           </label>
                           <Input
                             className="form-control-alternative"
-                            defaultValue="Jesse"
+                            defaultValue="Usher"
                             id="input-last-name"
                             placeholder="Last name"
                             type="text"
@@ -210,7 +208,7 @@ const GerirPerfil = () => {
                   <hr className="my-4" />
                   {/* Address */}
                   <h6 className="heading-small text-muted mb-4">
-                    Contact information
+                    Contacto
                   </h6>
                   <div className="pl-lg-4">
                     <Row>
@@ -220,7 +218,7 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-address"
                           >
-                            Address
+                           Endereco
                           </label>
                           <Input
                             className="form-control-alternative"
@@ -239,7 +237,7 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-city"
                           >
-                            City
+                            Cidade
                           </label>
                           <Input
                             className="form-control-alternative"
@@ -256,7 +254,7 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-country"
                           >
-                            Country
+                            Pais
                           </label>
                           <Input
                             className="form-control-alternative"
@@ -273,7 +271,7 @@ const GerirPerfil = () => {
                             className="form-control-label"
                             htmlFor="input-country"
                           >
-                            Postal code
+                            Codigo Postal
                           </label>
                           <Input
                             className="form-control-alternative"
@@ -287,16 +285,15 @@ const GerirPerfil = () => {
                   </div>
                   <hr className="my-4" />
                   {/* Description */}
-                  <h6 className="heading-small text-muted mb-4">About me</h6>
+                  <h6 className="heading-small text-muted mb-4">Sobre Me</h6>
                   <div className="pl-lg-4">
                     <FormGroup>
-                      <label>About Me</label>
+                      <label>Sobre Me</label>
                       <Input
                         className="form-control-alternative"
                         placeholder="A few words about you ..."
                         rows="4"
-                        defaultValue="A beautiful Dashboard for Bootstrap 4. It is Free and
-                        Open Source."
+                        defaultValue="Usher Mendoça."
                         type="textarea"
                       />
                     </FormGroup>

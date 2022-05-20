@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 
 import axios from "../../services/axiosConfig";
@@ -8,6 +9,7 @@ import {
   Button,
   Card,
   CardBody,
+  // eslint-disable-next-line no-unused-vars
   CardHeader,
   Container,
   Row,
@@ -16,6 +18,7 @@ import {
 // core components
 import Header from "components/Headers/Header";
 
+// eslint-disable-next-line no-unused-vars
 import { TerminalModal } from '../../components/Modal/TerminalModal';
 
 const Terminais = () => {

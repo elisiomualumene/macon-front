@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 import { ToastContainer } from "react-toastify";

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
@@ -14,6 +15,7 @@ export function Routes() {
             <Switch>
                 <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
                 <Route path="/admin" component={AdminLayout} />
+                <Route path="setting" components={<h1>Hello World</h1>} />
                 <Redirect from="/" to="/auth" />
             </Switch>
         </BrowserRouter>
