@@ -129,7 +129,7 @@ const Provincias = () => {
   }
 
 async function getProvinceList(){
-  const request = await axios.get("/provinces/list/1");
+  const request = await axios.get("/provinces/all");
   const { data } = await request.data;
   // console.log("**************", data );
   // eslint-disable-next-line no-unused-vars

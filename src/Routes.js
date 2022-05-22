@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // Components
-//import PrivateRoute from './components/Routes/PrivateRoute';
+import PrivateRoute from './components/Routes/PrivateRoute';
 
 // Routes
 import AdminLayout from "./routes/Admin";
@@ -14,7 +14,7 @@ export function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
-                <Route path="/admin" component={AdminLayout} />
+                <PrivateRoute path="/admin" component={AdminLayout} />
                 <Route path="setting" components={<h1>Hello World</h1>} />
                 <Redirect from="/" to="/auth" />
             </Switch>

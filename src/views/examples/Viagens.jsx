@@ -35,7 +35,7 @@ const Viagens = () => {
   }
 
   async function getTravelList() {
-    const request = await axios.get("/travels/list/");
+    const request = await axios.get("client/travel/all");
     const { data } = await request.data;
 
     console.log("************** Travel List: ", data);
@@ -49,19 +49,19 @@ const Viagens = () => {
         returnDate,
         price,
       }) => {
-        const { provinceName: orignProvinceName } = originProvince;
-        const { provinceName: destinyProvinceName } = destinyProvince;
+        // const { provinceName: orignProvinceName } = originProvince;
+        // const { provinceName: destinyProvinceName } = destinyProvince;
 
         setTableComponents((lastTravel) => [
           ...lastTravel,
           // { Origin: "xxx", Destiny: "xxx", departureDate: departureDate, returnDate: returnDate,price: price },
-          {
-            Origin: orignProvinceName,
-            Destiny: destinyProvinceName,
-            departureDate: departureDate,
-            returnDate: returnDate,
-            price: price,
-          },
+          // {
+          //   Origin: orignProvinceName,
+          //   Destiny: destinyProvinceName,
+          //   departureDate: departureDate,
+          //   returnDate: returnDate,
+          //   price: price,
+          // },
         ]);
       }
     );
